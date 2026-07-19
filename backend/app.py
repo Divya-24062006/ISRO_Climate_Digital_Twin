@@ -16,11 +16,10 @@ from services.analytics import analytics_service
 from fastapi import HTTPException
 
 app = FastAPI()
-
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://YOUR-FRONTEND-URL.onrender.com"
+    "https://isro-climate-digital-twin.netlify.app"
 ]
 
 app.add_middleware(
